@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>- Bienvenido -</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <div class="header">
+        <nav class="header__navegacion header__contenedor">
+            <img class="header__imagen" src="build/img/logo3.png" alt="imagen logo" class="header__logo">
+            <div class="header__menu">
+                <a class="header__enlace" href="#">Inicio</a>
+                <a class="header__enlace" href="#">Proyectos</a>
+                <a class="header__enlace" href="#">Contactos</a>
+            </div>        
+        </nav>
+
+        <div class="header__info  header__contenedor">
+            <p class="header__titulo ">Hola, soy Nicolás.</p>
+            <p class="header__texto">HTML - CSS Full responsive - SASS - SCSS - Javascript -</p>
+        </div>
+    </div>
+
+    <main class="nosotros">
+        <div class="nosotros__contenedor">
+            <figure class="nosotros__grid">
+                <img class="nosotros__imagen" src="build/img/imagennico2.jpeg" alt="imagen nicolas traczuk">
+                <div class="nosotros__info">
+                    <p class="nosotros__titulo">Sobre mi</p>
+                    <p class="nosotros__texto">Vivo en Buenos Aires, Argentina. Trato de ver siempre el lado positivo. Si hay comunicación, hay garantía de crecimiento.</p>
+                    <div class="nosotros__redes">
+                        <a target="_blank"  href="https://twitter.com/nicotraczuk" class="nosotros__icono"><img src="build/img/icono-twitter.svg" alt=""></a>
+                        <a target="_blank" href="https://www.instagram.com/nico.traczuk/" class="nosotros__icono"><img src="build/img/icono-instagram.svg" alt=""></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/nicol%C3%A1s-traczuk-639a76256/" class="nosotros__icono"><img src="build/img/icono-linkedin.svg" alt=""></a>
+                    </div>
+                </div>
+            </figure>
+        </div>
+    </main>
+
+    <section class="proyecto" >
+        <h1 class="proyecto__titulo">Proyectos</h1>
+        <div class="proyecto__contenedor">
+            <div class="proyecto__dropdown"> <!-- CARD -->
+                <a href="#" class="proyecto__imagen">Proyecto A<img src="build/img/open-folder.png" alt="imagen folder"></a>
+                <div class="proyecto__contenido">
+                    <p class="proyecto__item">1</p>
+                    <p class="proyecto__item">2</p>
+                    <p class="proyecto__item">3</p>
+                </div>
+            </div>
+            <div class="proyecto__dropdown"> <!-- CARD -->
+                <a href="#" class="proyecto__imagen">Proyecto A<img src="build/img/open-folder.png" alt="imagen folder"></a>
+                <div class="proyecto__contenido">
+                    <p class="proyecto__item">1</p>
+                    <p class="proyecto__item">2</p>
+                    <p class="proyecto__item">3</p>
+                </div>
+            </div>
+            <div class="proyecto__dropdown"> <!-- CARD -->
+                <a href="#" class="proyecto__imagen">Proyecto A<img src="build/img/open-folder.png" alt="imagen folder"></a>
+                <div class="proyecto__contenido">
+                    <p class="proyecto__item">1</p>
+                    <p class="proyecto__item">2</p>
+                    <p class="proyecto__item">3</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacto">
+        <h1 class="contacto__titulo">Contactame</h1>
+        <form action="" class="contacto__formulario">
+
+            <label class="contacto__label" for="nombre">Nombre:</label>
+            <input class="contacto__input" id="nombre" name="nombre" type="text">
+            <br>
+            <label class="contacto__label" for="email">Email:</label>
+            <input class="contacto__input" id="email" name="email" type="email">
+            <br>
+            <label class="contacto__label" for="mensaje">Mensaje:</label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+            <br>
+            <input class="contacto__input" type="submit" value="Enviar">
+
+        </form>
+    </section>
+</body>
+</html>

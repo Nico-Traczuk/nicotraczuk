@@ -1,0 +1,40 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.proyecto {
+    height: 70rem;
+    &__contenedor {
+      margin-top: 5rem;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    
+    &__titulo {
+      text-align: center;
+      margin-top: 5rem;
+      text-transform: uppercase;
+      color: v.$secundario;
+    }
+    
+    &__dropdown {
+      position: relative;
+      &:hover .proyecto__contenido {
+        display: block;
+      }
+    }
+
+    &__contenido {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    &__item {
+      color: red;
+      padding: 2rem 3rem;
+    }
+}

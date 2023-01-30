@@ -1,0 +1,32 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before,*:after {
+    box-sizing: inherit;
+}   
+
+body {
+    font-size: 2rem;
+    font-family: v.$fuentePrincipal;
+    background-color: v.$grisClaro;
+    line-height: 1.5;
+    margin: 0;
+}
+
+[class*="__contenedor"] { /* Creamos un atributo para reutilizar el codigo contenedor y no escribir tanto*/
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 95%;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+a {
+    text-decoration: none;
+    
+}

@@ -1,0 +1,60 @@
+@use 'base/variables' as v; 
+@use 'base/mixins' as m;
+
+.nosotros {
+    margin-top: 10rem;
+
+    &__grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap: 5rem;
+        @include m.tablet { 
+            flex-direction: row;
+        }
+        
+    }
+
+    &__imagen {
+        width: 35rem;
+        border-radius: 50%;
+        box-shadow: 2px 2px 15px v.$secundario;
+        transition: .3s;
+        &:hover {
+            transform:  rotate(3deg) scale(1.1);
+            box-shadow:2px 2px 15px darken(v.$secundario, 50%);
+            
+        }
+    }
+
+    &__titulo {
+        font-size: 4rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: v.$secundario;
+        letter-spacing: 1.5;
+        margin: 0;
+        
+    }
+
+    &__texto {
+        font-size: 2.2rem;
+        line-height: 1.8;
+        letter-spacing: 1.2;
+        margin: 0;
+    }
+
+    &__redes {
+       display: flex;
+       margin-top: 4rem;
+       gap: 5rem;
+    }
+
+    &__icono {
+        transition: all .2s;
+        &:hover {
+            transform: scale(1.3);
+        }
+    }
+}
