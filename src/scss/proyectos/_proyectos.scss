@@ -3,13 +3,20 @@
 
 .proyecto {
     height: 70rem;
+
     &__contenedor {
       margin-top: 5rem;
       display: flex;
-      justify-content: space-around;
+      flex-direction: column;
+      align-items: center;
+      gap: 5rem;
+      @include m.tablet { 
+        flex-direction: row;
+        justify-content: space-around;
+        gap: unset;
+      }
     }
-
-    
+  
     &__titulo {
       text-align: center;
       margin-top: 5rem;
@@ -19,9 +26,12 @@
     
     &__dropdown {
       position: relative;
-      &:hover .proyecto__contenido {
-        display: block;
+      @include m.tablet { 
+        &:hover .proyecto__contenido {
+          display: block;
+        }
       }
+      
     }
 
     &__contenido {
@@ -31,10 +41,11 @@
       min-width: 160px;
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
       z-index: 1;
+      transition: all .3s;
     }
     
     &__item {
-      color: red;
+      color: blue;
       padding: 2rem 3rem;
     }
 }
