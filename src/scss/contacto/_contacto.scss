@@ -1,3 +1,42 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
 
+.contacto {
+    background-color: #e1e1e1;   
+    padding: 10rem;
+
+    &__titulo {
+        text-align: center;
+        text-transform: uppercase;
+        color: v.$secundario;
+        margin: 0;
+    }
+
+    &__formulario {
+        background-color: darken(v.$principal,20%); 
+        margin: 5rem auto;
+        padding: 5rem;
+        display: grid;
+        width: 70rem;
+        box-shadow: 1px 1px 20px rgb(0,0,0,0.6);
+        border-radius: 4rem;
+    }
+
+    &__label {
+        text-transform: uppercase;
+        color: v.$secundario;
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+
+    &__text {
+        margin-top: 1rem;
+    }
+    &__input {
+        margin: 1rem 0;
+        border-radius: 5px;
+    }
+    &__submit {
+        
+    }
+}

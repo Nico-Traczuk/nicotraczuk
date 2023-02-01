@@ -489,7 +489,6 @@ a {
 }
 .proyecto__titulo {
   text-align: center;
-  margin-top: 5rem;
   text-transform: uppercase;
   color: #4B8178;
 }
@@ -513,4 +512,37 @@ a {
 .proyecto__item {
   color: blue;
   padding: 2rem 3rem;
+}
+
+.contacto {
+  background-color: #e1e1e1;
+  padding: 10rem;
+}
+.contacto__titulo {
+  text-align: center;
+  text-transform: uppercase;
+  color: #4B8178;
+  margin: 0;
+}
+.contacto__formulario {
+  background-color: #ffca65;
+  margin: 5rem auto;
+  padding: 5rem;
+  display: grid;
+  width: 70rem;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.6);
+  border-radius: 4rem;
+}
+.contacto__label {
+  text-transform: uppercase;
+  color: #4B8178;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.contacto__text {
+  margin-top: 1rem;
+}
+.contacto__input {
+  margin: 1rem 0;
+  border-radius: 5px;
 }
