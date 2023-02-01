@@ -76,20 +76,24 @@
 
     <section class="contacto">
         <h1 class="contacto__titulo">Contactame</h1>
-        <form action="" class="contacto__formulario">
+        <form action="" class="contacto__formulario" id="formulario">
 
-            <label class="contacto__label" for="nombre">Nombre:</label>
-            <input class="contacto__input" id="nombre" name="nombre" type="text">
-            <br>
-            <label class="contacto__label" for="email">Email:</label>
-            <input class="contacto__input" id="email" name="email" type="email">
-            <br>
+            <label class="contacto__label" for="nombre">Nombre y apellido:</label>
+            <input class="contacto__input" id="nombre" name="nombre" type="text" placeholder="Indique su nombre y apellido aquí">
+            
+            <label class="contacto__label" for="email">Email de contacto:</label>
+            <input class="contacto__input" id="email" name="email" type="email" placeholder="Indique su email">
+            <label class="contacto__label" for="asunto">Asunto:</label>
+            <input class="contacto__input" id="asunto" name="asunto" type="asunto" placeholder="Indique su asunto">
+            
             <label class="contacto__label" for="mensaje">Mensaje:</label>
-            <textarea class="contacto__text" name="mensaje" id="mensaje" cols="10" rows="10"></textarea>
-            <br>
-            <input class="contacto__submit" id="enviar" type="submit" value="Enviar">
-
+            <textarea class="contacto__text" name="mensaje" id="mensaje" cols="10" rows="10" placeholder="Mensaje"></textarea>
+            
+            <input class="contacto__submit" id="submit" type="submit" value="Enviar" >
+            <div id="spinner" class="lds-roller hidden"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
         </form>
+        
     </section>
+    <script src="app.js"></script>
 </body>
 </html>
