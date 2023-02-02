@@ -1,10 +1,15 @@
 
 document.addEventListener('DOMContentLoaded', function() {
-
-    // variables
+    // variables 
+    const email = {
+        nombre: '',
+        email: '',
+        asunto: '',
+        mensaje: ''
+    };
     const formulario = document.querySelector('#formulario');
-    const inputEmail = document.querySelector('#email');
     const inputNombre = document.querySelector('#nombre');
+    const inputEmail = document.querySelector('#email');
     const inputAsunto = document.querySelector('#asunto');
     const inputMensaje = document.querySelector('#mensaje');
     const submit = document.querySelector('#submit')
@@ -20,9 +25,15 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(() => {
             spinner.style.display='none'
             mostrarTexto()
-        }, 3000);
+        }, 2000);
 
     })
+
+    
+    
+    
+    
+    //funciones
 
 
     function mostrarTexto() {
